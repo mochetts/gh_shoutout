@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  interacted_at: <%= 2.days.ago %>
+  interaction_type: pull_comment
+  source_user: dhh
+  target_user: tenderlove
+
+two:
+  interacted_at: <%= 2.days.ago %>
+  interaction_type: pull_comment
+  source_user: tenderlove
+  target_user: dhh
+
+three:
+  interacted_at: <%= 1.day.ago %>
+  interaction_type: pull_comment
+  source_user: tenderlove
+  target_user: dhh
