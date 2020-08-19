@@ -44,4 +44,4 @@ end
 
 ##### Affinities
 
-# To generate affinities run `$ rails affinities:compute` after the database gets seeded.
+Rake::Task['affinities:compute'].invoke('all')

@@ -10,6 +10,7 @@ class AffinityBuilderService
   end
 
   def compute
+    clear_affinities
     create_affinities
   end
 
@@ -43,6 +44,10 @@ private
         strength: affinity_strength,
       )
     end
+  end
+
+  def clear_affinities
+    Affinity.where(date: compute_date).destroy_all
   end
 
 end
