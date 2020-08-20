@@ -26,7 +26,7 @@ Run `rails db:migrate` to create the database.
 Run `rails db:seed` to seed some data.
 
 ## Running the project in development
-1) Run `rails server` to start the rails server. 
+1) Run `rails server` to start the backend server. 
 2) Run `bin/webpack-dev-server` to enable webpack hot reloading.
 
 ## How to run the test suite
