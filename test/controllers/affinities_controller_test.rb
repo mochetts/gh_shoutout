@@ -6,7 +6,7 @@ class AffinitiesControllerTest < ActionDispatch::IntegrationTest
     AffinityBuilderService.new(2.days.ago.to_date).compute
     AffinityBuilderService.new(1.days.ago.to_date).compute
 
-    get affinities_url, params: { user: 'dhh', date_range: { from: 2.days.ago.to_date, to: 1.day.ago.to_date } }
+    get affinities_url, params: { user: 'dhh', from: 2.days.ago.to_date, to: 1.day.ago.to_date }
     assert_response :success
 
     affinity = JSON.parse(@response.body).first.symbolize_keys

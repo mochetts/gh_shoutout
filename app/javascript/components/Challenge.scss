@@ -1,0 +1,49 @@
+.typeahead {
+  .typeahead-selector {
+    list-style: none;
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    position: absolute;
+    background: white;
+    z-index: 9999;
+    width: 150px;
+    box-shadow: 4px 18px 56px -9px rgba(112,112,112,1);
+    border-radius: 0px 0px 5px 5px;
+
+    li {
+      color: black;
+      .typeahead-option {
+        text-decoration: none;
+        display: block;
+        padding: 10px 10px;
+        color: inherit;
+      }
+      &.hover {
+        color: #16181b;
+        background-color: #f8f9fa;
+      }
+    }
+  }
+}
+
+.filters {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+
+  .date-range-picker {
+    display: flex;
+    flex-direction: row;
+  }
+
+  span {
+    margin: 0 10px;
+  }
+
+  .user-picker {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+  }
+}

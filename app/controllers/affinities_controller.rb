@@ -7,10 +7,14 @@ class AffinitiesController < ApiController
 private
 
   def affinities
-    AffinitiesSquasherService.for(params[:user]).squash(**date_range)
+    AffinitiesSquasherService.for(filters[:user]).squash(**date_filters)
   end
 
-  def date_range
-    params.require(:date_range).permit(:from, :to).to_hash.symbolize_keys
+  def date_filters
+    filters.slice(:from, :to).to_hash.symbolize_keys
+  end
+
+  def filters
+    params.permit(:user, :from, :to)
   end
 end
