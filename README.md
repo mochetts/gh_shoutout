@@ -5,7 +5,7 @@
 This is a demo application which main purpose is to provide list view of affinities between contributors of the `rails/rails` repository.
 For now, affinities between users are determined on one specific interaction: pull request comment.
 
-![image](https://user-images.githubusercontent.com/3678598/90800595-41f52c00-e2eb-11ea-9edf-94376b97e18a.png)
+![image](https://user-images.githubusercontent.com/3678598/90801497-57b72100-e2ec-11ea-83f5-6a730627bd27.png)
 
 ## Specs
 
