@@ -25,9 +25,10 @@ Run `rails db:migrate` to create the database.
 ## Database initialization
 Run `rails db:seed` to seed some data.
 
-## Running the project in development
+## Running in development
 1) Run `rails server` to start the backend server. 
 2) Run `bin/webpack-dev-server` to enable webpack hot reloading.
+3) Navigate to `localhost:3000/challenge` to see the project running.
 
 ## How to run the test suite
 Run `rails test` to run unit/integration tests
