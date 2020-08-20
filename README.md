@@ -9,10 +9,10 @@ For now, affinities between users are determined on one specific interaction: pu
 
 ## Specs
 
-Ruby: v2.6.3
-Rails: v6.0.x
-React: v16.13.x
-SQLLite: v3
+- Ruby: v2.6.3
+- Rails: v6.0.x
+- React: v16.13.x
+- SQLLite: v3
 
 ## Configuration
 After checking out the project, run these two commands to install all dependencies:
