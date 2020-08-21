@@ -32,7 +32,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'react-rails'
 
 # Github integration
-gem "octokit", "~> 4.0"
+gem 'octokit', '~> 4.0'
 
 # Progressbar for rakes.
 gem 'rake-progressbar', '~> 0.0.5'
