@@ -14,6 +14,17 @@ For a more detailed plan, please follow [this link](https://docs.google.com/docu
 - React: v16.13.x
 - SQLLite: v3
 
+## Ruby Libraries Used
+- [pry-rails](https://github.com/rweng/pry-rails) for an enhanced development experience.
+- [oktokit.rb](https://github.com/octokit/octokit.rb) to pull data from github.
+- [rake-progressbar](https://github.com/ondrejbartas/rake-progressbar) to render progress bars in rake tasks.
+- [tty-spinner](https://github.com/piotrmurach/tty-spinner) to render loading spinners in rake tasks.
+
+## Frontend Libraries Used
+* [react-table](https://github.com/tannerlinsley/react-table/tree/v6) to render the table view
+* [react-typeahead](https://github.com/fmoo/react-typeahead) to render the users picker
+* [react-datepicker](https://github.com/Hacker0x01/react-datepicker) to render the date picker
+
 ## Configuration
 After checking out the project, run these two commands to install all dependencies:
 1) run `bundle install`
