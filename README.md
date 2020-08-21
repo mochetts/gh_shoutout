@@ -35,7 +35,7 @@ Run `rails db:migrate` to create the database.
 
 ## Database initialization
 There are two options:
-1) Run `rails db:seed` to seed the database with stubbed some data.
+1) Run `rails db:seed` to seed the database with mock data.
 2) Run `$ rails github:poll\[rails/rails\]` to poll data from the [rails repository](https://github.com/rails/rails).
 ![github_polling](https://user-images.githubusercontent.com/3678598/90932135-6a0c8a00-e3d4-11ea-962c-f24e06097092.gif)
 
