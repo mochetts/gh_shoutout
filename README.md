@@ -1,5 +1,4 @@
-# Github Shoutout 
-
+# Github Shoutout
 
 ## Introduction
 This is a demo application which main purpose is to provide list view of affinities between contributors of the `rails/rails` repository.
@@ -10,7 +9,6 @@ For a more detailed plan, please follow [this link](https://docs.google.com/docu
 ![image](https://user-images.githubusercontent.com/3678598/90801497-57b72100-e2ec-11ea-83f5-6a730627bd27.png)
 
 ## Specs
-
 - Ruby: v2.6.3
 - Rails: v6.0.x
 - React: v16.13.x
@@ -25,10 +23,13 @@ After checking out the project, run these two commands to install all dependenci
 Run `rails db:migrate` to create the database.
 
 ## Database initialization
-Run `rails db:seed` to seed some data.
+There are two options:
+1) Run `rails db:seed` to seed the database with stubbed some data.
+2) Run `$ rails github:poll\[rails/rails\]` to poll data from the rails repository.
+![github_polling](https://user-images.githubusercontent.com/3678598/90932135-6a0c8a00-e3d4-11ea-962c-f24e06097092.gif)
 
 ## Running in development
-1) Run `rails server` to start the backend server. 
+1) Run `rails server` to start the backend server.
 2) Run `bin/webpack-dev-server` to enable webpack hot reloading.
 3) Navigate to `localhost:3000/challenge` to see the project running.
 
@@ -36,6 +37,6 @@ Run `rails db:seed` to seed some data.
 Run `rails test` to run unit/integration tests
 
 ## Roadmap
-- Create a rake task that seeds the database from the `rails/rails` repository (use [oktokit](https://github.com/octokit/octokit.rb))
+- Create a cron job to run the github polling on a daily basis and make sure it only processes pull requests from the execution day.
 - Create integration tests for the frontend (use [Cypress](https://github.com/cypress-io/cypress))
 - Add continuous integration (circle ci)

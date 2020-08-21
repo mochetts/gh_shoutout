@@ -31,6 +31,15 @@ gem 'bootsnap', '>= 1.4.2', require: false
 # Build a react frontend app
 gem 'react-rails'
 
+# Github integration
+gem "octokit", "~> 4.0"
+
+# Progressbar for rakes.
+gem 'rake-progressbar', '~> 0.0.5'
+
+# Loading spinner for rakes.
+gem 'tty-spinner'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
