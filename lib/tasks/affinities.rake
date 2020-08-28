@@ -5,7 +5,7 @@ namespace :affinities do
     date_arg = args[:date]
 
     if date_arg == 'all'
-      interaction_dates = Interaction.select(:interacted_at).order(interacted_at: :asc).pluck(:interacted_at).map(&:to_date).uniq
+      interaction_dates = Interaction.order(interacted_at: :asc).distinct.pluck(:interacted_at).map(&:to_date)
       interaction_dates.each do |date|
         AffinityBuilderService.for(date).compute
       end
