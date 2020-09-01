@@ -24,7 +24,7 @@ function Challenge() {
     () => [
       {
         Header: 'Username',
-        accessor: 'user', 
+        accessor: 'user',
       },
       {
         Header: 'Affinity Strength',
@@ -36,7 +36,7 @@ function Challenge() {
       },
     ],
     []
-  ) 
+  )
 
   // Callback to retrieve affinities once the filters are all set.
   const fetchAffinities = async (filters) => {
@@ -74,7 +74,7 @@ function Challenge() {
             placeholder="Start typing for results..."
             options={users || []}
             ref={userPicker}
-            onOptionSelected={(selectedUser) => setUser(selectedUser)}
+            onOptionSelected={setUser}
             onBlur={() => userPicker.current.setState({ showResults: false })}
             onFocus={() => userPicker.current.setState({ showResults: true })}
           />
@@ -83,7 +83,7 @@ function Challenge() {
           <span>From:</span>
           <DatePicker
             selected={startDate}
-            onChange={date => setStartDate(date)}
+            onChange={setStartDate}
             selectsStart
             startDate={startDate}
             endDate={endDate}
@@ -91,7 +91,7 @@ function Challenge() {
           <span>To:</span>
           <DatePicker
             selected={endDate}
-            onChange={date => setEndDate(date)}
+            onChange={setEndDate}
             selectsEnd
             startDate={startDate}
             endDate={endDate}
